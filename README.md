@@ -27,7 +27,7 @@ To run the container
 ### Example Run Command ###
 
 ```docker
-docker run -v <local-license-path>:/app/stk11.6.1/bin/LicenseData/client.lic -p 8001:8001
+docker run --publish 8001:8001 -v <local-license-path>:/app/usr/STK12/Config/stkLicense.lic --name stkengine jthompson/stkengine
 ```
 
 ## Testing ##
