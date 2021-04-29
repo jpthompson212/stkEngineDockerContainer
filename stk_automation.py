@@ -1,6 +1,12 @@
 import socket, sys
 
-def connect():
+def connect(address : str, port : int):
+    """Method to connect to STK
+
+    Arguments:
+    address -- the string ip address (typically localhost or 127.0.0.1)
+    port -- the integer port number (typically 5001 is the STK default)
+    """
     HOST = 'localhost'
     PORT = 8001
     BUFFER_SIZE = 1024
@@ -22,6 +28,12 @@ def connect():
     return s
 
 def sendCmd(message : str, s : socket):
+    """Method to send command
+
+    Arguements:
+    message -- the string message
+    s -- the socket connection returned from :meth:`connect` method
+    """
     s.sendall(message.encode())
 
 if __name__=="__main__":

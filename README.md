@@ -1,6 +1,8 @@
 # STK Engine Container #
 
- > Unofficial STK Engine Linux Container
+ > Unofficial STK Engine on Linux Container
+
+ This requires that you download STK Engine for Linux from [AGI Suppoort](https://support.agi.com/downloads/?t=2) and obtain a license by contacting [AGI Support](mailto:support@agi.com). Once you have obtained these place the STK Engine for Linux zip file and the license file at the root directory of the project.
 
 ## Build the image ##
 
