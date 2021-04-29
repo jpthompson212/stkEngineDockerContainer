@@ -1,0 +1,12 @@
+# stk install
+STKEngUnix*.zip
+STKEngUnix*/*
+
+# license
+*.lic
+
+# Byte-compiled
+__pycache__/
+
+# Editor files
+.vscode/

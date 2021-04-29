@@ -1,0 +1,29 @@
+stk.v.12.0
+WrittenBy    STK_v12.2.0
+
+BEGIN Application
+
+    BEGIN Ipc
+
+        Version		 2.0
+        AllowConnect		 On
+        AllowAsync		 On
+        AllowExtConnect		 On
+        MaxConnectionPoll		 0
+        PollPeriod		 50
+        MaxWriteRetries		 10
+        Acknowledge		 On
+        DefAckString		 ACK
+        DefNonAckString		 NACK
+        Echo		 Off
+        WildcardIgnoreNack		 Off
+        Error		 On
+        Verbose		 Off
+        ConnectType		 TCPSocket
+        SocketNum		 5001
+        AllowLogging		 Off
+
+    END Ipc
+
+END Application
+
