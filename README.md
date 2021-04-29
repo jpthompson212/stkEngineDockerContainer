@@ -38,6 +38,8 @@ Now that the container is running it can be tested utilizing the STK connect api
 
 ### Example using python ###
 
+A full python script can be found at [stk_automation.py](stk_automation.py)
+
 ```python
 import socket, sys
 
