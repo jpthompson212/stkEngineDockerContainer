@@ -1,6 +1,10 @@
-# stk install
+# stk install prior to 12.1.0
 STKEngUnix*.zip
 STKEngUnix*/*
+
+# stk install including and after 12.1.0
+STKEngineLinux_*.zip
+STKEngineLinux_*/*
 
 # license
 *.lic
