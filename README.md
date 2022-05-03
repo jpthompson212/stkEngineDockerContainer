@@ -2,11 +2,9 @@
 
  > Unofficial STK Engine on Linux Container
 
- This requires that you download STK Engine for Linux from [AGI Suppoort](https://support.agi.com/downloads/?t=2) and obtain a license by contacting [AGI Support](mailto:support@agi.com). Once you have obtained these place the STK Engine for Linux zip file and the license file at the root directory of the project.
+ This requires that you download STK Engine on Linux from [AGI Suppoort](https://support.agi.com/downloads/3/) and obtain a license by contacting [AGI Support](mailto:support@agi.com). Once you have obtained these place the STK Engine for Linux zip file at the root directory and update the [license file](License/ansyslmd.ini) to point to your Ansys license server.
 
 ## Build the image ##
-
-If you would like to build the image yourself
 
 ### Example Build Command ###
 
@@ -16,23 +14,15 @@ docker build . -t jthompson/stkengine
 
 ## Run the container ##
 
-To run the container
-
-| **Flag** | **Value** |
-| :----- | :------ |
-| -p, --publish | `8001:8001` |
-| -v, --volume | `<local-license-path>:/var/flexlm/stk_server_license.lic` |
-| --name | `stk_engine` |
-
 ### Example Run Command ###
 
 ```docker
-docker run --publish 8001:8001 -v <local-license-path>:/app/usr/STK12/Config/stkLicense.lic --name stkengine jthompson/stkengine
+docker run --publish 8001:8001 --name stkengine jthompson/stkengine
 ```
 
 ## Testing ##
 
-Now that the container is running it can be tested utilizing the STK connect api language.  
+Now that the container is running it can be tested utilizing the STK connect api language.
 
 > [Connect Language Reference](https://help.agi.com/stk/#../Subsystems/connect/Content/theVeryTop.htm)
 
