@@ -22,7 +22,6 @@ ENV LD_LIBRARY_PATH=/app/stk/stk12.4.0/bin \
 # Set the working directory
 WORKDIR /app/
 
-#VOLUME ["/app/stk12.0.0/bin/LicenseData"]
 # Copy over the license file
 COPY License/ansyslmd.ini /app/stk/stk12.4.0/shared_files/licensing
 RUN /app/stk/stk12.4.0/bin/stkxnewuser --force
